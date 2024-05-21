@@ -1,0 +1,122 @@
+/* Apply a sleek, modern font and base styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 300px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+h1 {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Subheader styling */
+h2 {
+  font-size: 18px;
+  color: #666;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Input styling */
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Change border color on focus */
+input[type="text"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Change button color on hover */
+button:hover {
+  background-color: #45A049;
+}
+
+/* Saved URLs section */
+#saved-urls {
+  margin-top: 20px;
+}
+
+/* List styling */
+#url-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* List item styling */
+#url-list li {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Name text styling */
+#url-list li span {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Button to access URLs */
+.access-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Access button styling */
+.access-btn {
+  color: #4CAF50;
+}
+
+/* Change access button color on hover */
+.access-btn:hover {
+  color: #45A049;
+}
+
+/* Delete button styling */
+.delete-btn {
+  color: #f44336;
+}
+
+/* Change delete button color on hover */
+.delete-btn:hover {
+  color: #e53935;
+}

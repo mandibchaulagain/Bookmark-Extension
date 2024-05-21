@@ -1,10 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "Mandib Extension",
-    "description": "Base Level Extension",
-    "version": "1.0",
-    "action": {
-      "default_popup": "hello.html",
-      "default_icon": "woman.png"
+  "manifest_version": 3,
+  "name": "URL Saver",
+  "version": "1.0",
+  "description": "Save the current URL with a custom name",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  // "background": {
+  //   "service_worker": "background.js"
+  // }
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "woman.png",
+      "48": "woman.png",
+      "128": "woman.png"
     }
+  },
+  "icons": {
+    "16": "woman.png",
+    "48": "woman.png",
+    "128": "woman.png"
+  }
 }
