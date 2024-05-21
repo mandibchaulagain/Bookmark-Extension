@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
           li.setAttribute('data-name', name);
           li.setAttribute('data-url', urls[name]);
           li.innerHTML = `
-            <span>${name}</span>
-            <button class="access-btn">Open</button>
-            <button class="delete-btn">Delete</button>
+            <p>${name}</p>
+            <button class="access-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
           `;
           urlList.appendChild(li);
         }
@@ -65,4 +65,3 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-  

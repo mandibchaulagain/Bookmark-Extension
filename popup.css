@@ -1,25 +1,23 @@
-/* Apply a sleek, modern font and base styling */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #e2c69f8a;
+  color: #444;
   width: 300px;
-  margin: 0;
-  padding: 20px;
-  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
 }
 
 /* Header styling */
 h1 {
   font-size: 24px;
-  color: #4CAF50;
-  margin-bottom: 20px;
+  color: #555;
+  margin-bottom: 0px;
 }
 
 /* Subheader styling */
 h2 {
   font-size: 18px;
-  color: #666;
+  color: #555;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -37,27 +35,25 @@ input[type="text"] {
 
 /* Change border color on focus */
 input[type="text"]:focus {
-  border-color: #4CAF50;
+  border-color: #00a838; 
   outline: none;
 }
 
 /* Button styling */
 button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #4CAF50;
+  padding: 8px 12px;
+  background-color: #f0ad4e;
   border: none;
   border-radius: 5px;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 /* Change button color on hover */
 button:hover {
-  background-color: #45A049;
+  background-color: #fe9400;
 }
 
 /* Saved URLs section */
@@ -80,16 +76,21 @@ button:hover {
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
 }
 
 /* Name text styling */
-#url-list li span {
+#url-list li p {
   flex: 1;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  gap: 10px;
 }
 
 /* Button to access URLs */
@@ -103,20 +104,22 @@ button:hover {
 
 /* Access button styling */
 .access-btn {
-  color: #4CAF50;
+  color: #00a838; 
 }
 
 /* Change access button color on hover */
 .access-btn:hover {
-  color: #45A049;
+  color: #00a838; 
+  background-color: #dbdbdb;
 }
 
 /* Delete button styling */
 .delete-btn {
-  color: #f44336;
+  color: #e74c3c; 
 }
 
 /* Change delete button color on hover */
 .delete-btn:hover {
-  color: #e53935;
+  color: #c0392b; 
+  background: #dbdbdb;
 }

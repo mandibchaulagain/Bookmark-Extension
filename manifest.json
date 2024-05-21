@@ -7,21 +7,12 @@
     "activeTab",
     "storage"
   ],
-  // "background": {
-  //   "service_worker": "background.js"
-  // }
-  
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "woman.png",
-      "48": "woman.png",
-      "128": "woman.png"
+      "16": "bookmark.png",
+      "48": "bookmark.png",
+      "128": "bookmark.png"
     }
-  },
-  "icons": {
-    "16": "woman.png",
-    "48": "woman.png",
-    "128": "woman.png"
   }
 }
