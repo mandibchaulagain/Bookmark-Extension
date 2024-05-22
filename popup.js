@@ -17,14 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     urlList.addEventListener('click', (e) => {
-      if (e.target.classList.contains('delete-btn')) {
-        const name = e.target.closest('li').getAttribute('data-name');
-        deleteUrl(name);
-      } else if (e.target.classList.contains('access-btn')) {
-        const url = e.target.closest('li').getAttribute('data-url');
+      let target = e.target;
+      // Check if the clicked target or its parent has the 'access-btn' class
+      if (target.classList.contains('access-btn') || target.parentElement.classList.contains('access-btn')) {
+        const url = target.closest('li').getAttribute('data-url');
         chrome.tabs.create({ url });
+      } else if (target.classList.contains('delete-btn') || target.parentElement.classList.contains('delete-btn')) {
+        const name = target.closest('li').getAttribute('data-name');
+        deleteUrl(name);
       }
     });
+    
   
     function saveUrl(name, url) {
       chrome.storage.sync.get(['urls'], (result) => {
